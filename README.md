@@ -79,7 +79,7 @@ SketchClassification/
 | ConvNeXt v2 Large       | 91.60%            |
 | **ConvNeXt v2 Huge**    | **92.60%**        |
 
----
+
 
 ## 향후 개선점 및 TODO
 
@@ -93,4 +93,3 @@ SketchClassification/
 
 위 개선 사항을 통해 더욱 성능 높고 견고한 이미지 분류 모델을 개발하고자 합니다.
 
----
