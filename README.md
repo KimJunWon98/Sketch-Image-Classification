@@ -71,8 +71,8 @@ SketchClassification/
 ### 데이터 증강 예시
 ![증강 예시(워터마크 추가)](asset/augmentation.png)
 
-### 학습/검증 정확도 추이
-![학습 및 검증 정확도](asset/val_loss.png)
+### Validation loss 추이
+![Validation loss 추이](asset/val_loss.png)
 
 
 ---
