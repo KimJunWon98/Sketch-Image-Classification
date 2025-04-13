@@ -27,14 +27,15 @@ pip install -r requirements.txt
 
 ```
 SketchClassification/
-├── data/                   # 데이터셋 및 라벨
-├── asset/                  # 결과 이미지 저장
-├── dataset.py              # 데이터셋 및 전처리
-├── model.py                # 모델 생성 및 로딩
-├── train.py                # 모델 학습
-├── evaluate.py             # 모델 평가 및 예측
-├── requirements.txt        # 의존성 라이브러리
-└── README.md               # 프로젝트 설명서
+├── main.py
+└── packages
+    ├── CustomDataset.py
+    ├── Loss.py
+    ├── Model.py
+    ├── Trainer.py
+    ├── Transform.py
+    ├── Transform2.py
+    └── __init__.py
 ```
 
 각 파일은 데이터 전처리, 증강, 모델 정의, 학습 및 평가를 수행하도록 모듈화되었습니다.
@@ -68,13 +69,11 @@ SketchClassification/
 ## 결과 이미지 예시
 
 ### 데이터 증강 예시
-![증강 예시(워터마크 추가)](asset/augmentation_watermark_example.png)
+![증강 예시(워터마크 추가)](asset/augmentation.png)
 
 ### 학습/검증 정확도 추이
-![학습 및 검증 정확도](asset/train_val_accuracy_curve.png)
+![학습 및 검증 정확도](asset/val_loss.png)
 
-### 혼동 행렬 예시
-![혼동 행렬](asset/confusion_matrix_sample.png)
 
 ---
 
@@ -110,5 +109,3 @@ SketchClassification/
 위 개선 사항을 통해 더욱 성능 높고 견고한 이미지 분류 모델을 개발하고자 합니다.
 
 ---
-
-본 프로젝트를 통해 스케치 데이터 분류의 새로운 가능성을 탐구하고, 효과적인 이미지 인식 모델 개발을 위한 기반을 마련하였습니다. 지속적인 연구와 개선을 통해 실제 응용 분야로의 확장성을 높여 나가겠습니다.
